@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css?family=Aclonica|Bevan&display=swap');
+
+.album{
+  margin-top: 5%;
+}
+.modal-title{
+       text-align: left;
+    }
+
+#princ{
+  color: rgb(156, 100, 105);
+  text-align: center;
+  padding: 14%;
+  width: 100%;
+  height: 400px;
+  font-family: 'Bevan', cursive;
+ 
+  background: url(Images/galeria2.jpg)  center; 
+}
+
+.menu2 a{
+  font-size: 20px;
+  font-family: sans-serif;
+}
+#like,#like2,
+#like3,
+#like4,
+#like5,
+#like6,
+#like7,
+#like8,
+#like9,
+#like10,
+#like11,
+#like12{
+  border-bottom-right-radius:4px;
+  border-top-right-radius: 4px; 
+  box-shadow: none;
+}
+#like:hover,#like2:hover,
+#like3:hover,
+#like4:hover,
+#like5:hover,
+#like6:hover,
+#like7:hover,
+#like8:hover,
+#like9:hover,
+#like10:hover,
+#like11:hover,
+#like12:hover{
+  background:rgb(167, 164, 164);
+  }
+ 
+  
+
+
+#gusta,#gusta2,
+#gusta3,
+#gusta4,
+#gusta5,
+#gusta6,
+#gusta7,
+#gusta8,
+#gusta9,
+#gusta10,
+#gusta11,
+#gusta12{
+  
+  border: none;
+  text-align: right;
+}
+
+.menu2 li{
+ font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+ font-weight: 40; 
+
+}
+
+#n3F1{
+  margin-top: 36%;
+}
+
+#n1F2{
+  margin-top: 20%;
+}
+
+#n2F3,#n3F3{
+  margin-top: 13%;
+}
+
+#n1F4{
+  margin-top: 20%;
+}
+#n2F4{
+  margin-top: 13%;
+}
+
+#fila1{
+  height: 300px;
+}
+#fila2{
+  height: 220px;
+}
+#fila3{
+  height: 160px;
+}
+#fila4{
+  height: 200px;
+}
+
+
+@media(max-width:1200px){
+
+  #fila1{
+    height: 350px;
+  }
+
+  #fila2{
+    height: 230px;
+  }
+
+  #n1F1{
+    margin-top: 15%;
+  }
+  
+  #n3F1{
+    margin-top: 54%;
+  }
+  
+  #n1F2{
+    margin-top: 26%;
+  }
+  
+  #n2F3,#n3F3{
+    margin-top: 16%;
+  }
+  
+  #n1F4{
+    margin-top: 26%;
+  }
+  #n2F4{
+    margin-top: 16%;
+  }
+  
+}
+
+@media(max-width:990px){
+
+  #fila1{
+    height: 470px;
+  }
+
+  #fila2{
+    height: 290px;
+  }
+
+  #fila3{
+    height: 190px;
+  }
+
+  #n1F1{
+    margin-top: 39%;
+  }
+  
+  #n3F1{
+    margin-top: 152%;
+  }
+  
+  #n1F2{
+    margin-top: 66%;
+  }
+  #n3F2{
+    margin-top: 38%;
+  }
+  
+  #n2F3,#n3F3{
+    margin-top: 39%;
+  }
+  
+  #n1F4{
+    margin-top: 24%;
+  }
+  #n2F4{
+    margin-top: 10%;
+  }
+}
+
+@media(max-width:760px){
+
+  #fila1{
+    height: 300px;
+  }
+
+  #fila2{
+    height: 230px;
+  }
+  #n1F1{
+    margin-top:0;
+  }
+  
+  #n3F1{
+    margin-top: 0;
+  }
+  
+  #n1F2{
+    margin-top: 0;
+  }
+  #n3F2{
+    margin-top:0;
+  }
+  
+  #n2F3,#n3F3{
+    margin-top: 0;
+  }
+  
+  #n1F4{
+    margin-top:0;
+  }
+  #n2F4{
+    margin-top:0;
+  }
+}
+
+@media(max-width:768px){
+
+  #titulo{
+      float: left;
+      margin-top: -7%;
+  }
+
+}
+@media(max-width:670px){
+
+#titulo{
+    float: left;
+    margin-top: -8%;
+}
+
+}
+@media(max-width:590px){
+
+  #titulo{
+    margin-top: -10%;
+  }
+  
+  }
+
+@media(max-width:430px){
+  #titulo{
+    font-size: 25px;
+    margin-top: -14%;
+  }
+
+
+}

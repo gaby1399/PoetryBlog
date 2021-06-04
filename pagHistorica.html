@@ -1,0 +1,252 @@
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Gabriela Bolaños " />
+        <title>Poetry Time</title>
+        <link rel="stylesheet" href="css/menuPoetry.css">
+        <link rel="stylesheet" href="css/introduccion.css">
+        <link rel="stylesheet" href="css/Historia.css">
+        <link rel="stylesheet" href="css/Footer.css">
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
+   <script async defer
+      src="https://maps.googleapis.com/maps/api/js?libraries=geometry&sensor=false&key=AIzaSyAxziX9eF0QVah9FM7C793BC1ZZcYI_g7U">
+  </script>
+  <script src="javaScript/Api.js"></script>
+    </head>
+        <body>
+            <div id="contenido">
+         <header id="header">
+          <input type="checkbox" id="btn-menu">
+          <label for="btn-menu"><img src="Images/icono.png" alt="" ></label>
+           <h2 id="titulo">  <img src="Images/libro.png" style="float: left"
+             alt="PoetryTime" id="img"
+             height="30px"
+             width="30px"  padding="5px"/> Poetry Time</h2>
+
+             <nav class="menu2">
+               <ul>
+                    <li><a href="ProyectoPgW.html">Inicio</a>
+                        <li><a  id="pag" href="pagHistorica.html">Historia</a>
+                        <li><a  href="contac.html">Contactar</a>
+                       <li><a href="Bibliografias.html">Biografia</a>
+                       <li><a href="pagPoemas.html">Galeria</a>
+               </ul>
+            </nav>
+         </div>
+         </header>
+
+         <main>
+
+         <div id="introduccion">
+           <h1>Historia</h1>
+             <p>la poesía es el género literario más antiguo de todos, el primero, el que dio origen
+            a todos los demás. El registro más añejo de la escritura se conserva en el Museo Británico
+            y es un libro de poesía: el Cantar de Gilgamesh, datado para algunos en 4.000 años. La poesía ya
+            existía desde antes de ese registro escrito. Una teoría sobre su origen dice que comenzo por medio de los
+            cánticos religiosos, con lo que tendría entonces un doble origen: uno musical, que arrastraría a formar
+            palabras que acompañaran la melodía, para expresar lo que sentía el que cantaba, y otro puramente verbal,
+            el que prefieren otros, quienes identifican el punto de partida de la poesía con ese hipotético pero suponible
+            momento en que aquello que se hizo para ser cantado comenzó a ser repetido sin acompañamiento musical alguno.
+            Se puede imaginar que la poesía se originó en ambos momentos, sin mayor contradicción: ya era poesía cuando se
+            acompañaba la modulación de esas palabras con flautas dobles, y se consolidó como tal cuando fue
+            posible declamarla con o sin instrumentos.
+             <p></p>
+             <p>Actualmente es más común solo su lectura, pero ultimamente se ha generado nuevas maneras
+                 de poder expresar la poesia, como en escena,de una manera más expresiva y sactifactoria para
+                 el autor o interpretador ya que permite enviar de una manera más fácil el mensaje a sus
+                 expectadores.Tambien, se ha vuelto a incluir la musica, y no solo refiriendonos a un piano o un violin,
+                 sino a un grupo musical que vaya conjunto al poeta.
+             </p>
+
+      <div class="dato">
+   <h2>Datos del Servicio</h2>
+   <p>Un lugar bello donde leer poesía.
+
+  Tenemos los recursos para los amantes de la literatura y un espacio diseñado para enfatizar la belleza de la poesia.
+  El sitio cuenta con una extensa selección de los mejores poetas jovenes de esta decada lo que nos convierte en el destino
+  diario de lectores jovenes que nos visitan para descubrir y disfrutar del arte del verso.</p>
+</div>
+         </div>
+
+         <div id="ubc">
+             <h2>Ubicación</h2>
+
+
+    <div class="container map-container">
+         <div id="map" style="height: 100%; width: 100%;" class="mapa"> </div>
+            </div>
+
+            <script type="text/javascript">
+                var divMapa = document.getElementById('map');
+                navigator.geolocation.getCurrentPosition(fn_ok, fn_mal);
+
+
+                //Manejo de errores
+                function fn_mal(error) {
+                    var msj;
+                    switch (error.code) {
+                        case error.PERMISSION_DENIED:
+                            msj = "no se ha permitido el acceso a la posición del usuario.";
+                            break;
+                        case error.POSITION_UNAVAILABLE:
+                            msj = "no se ha podido acceder a la información de su posición.";
+                            break;
+                        case error.TIMEOUT:
+                            msj = "el servicio ha tardado demasiado tiempo en responder.";
+                            break;
+                        default:
+                            msj = "Error desconocido.";
+                    }
+                    alert('No se pudo obtener ubicación debido a que ' + msj)
+                }
+                //Fin Manejo de errores
+
+
+
+                function fn_ok(respuesta) {
+                    var lat = respuesta.coords.latitude;
+                    var lon = respuesta.coords.longitude;
+
+                    var gLatLonUsuario = new google.maps.LatLng(lat, lon);
+                    var gLatLonFijo = new google.maps.LatLng(10.0075307, -84.2115927);
+                    var objConfig = {
+                        zoom: 10,
+                        center: gLatLonFijo
+                    }
+                    var gMapa = new google.maps.Map(divMapa, objConfig);
+                    var objConfigMarkerFijo = {
+                        position: gLatLonFijo,
+                        map: gMapa,
+                        title: "Librería Internacional",
+
+                    }
+                    var objConfigMarkerUsuario = {
+                        position: gLatLonUsuario,
+                        map: gMapa,
+                        title: "Usted está aquí",
+                        icon: 'Images/MarkerUTN.ico',
+                        height: '2px',
+                        width: '2px'
+                    }
+
+                    var gMarkerFijo = new google.maps.Marker(objConfigMarkerFijo);
+                    var gMarkerUsuario = new google.maps.Marker(objConfigMarkerUsuario);
+
+                    var objConfigDR = {
+                        map: gMapa
+                    }
+
+
+                    var objConfigDS = {
+                        origin: gLatLonFijo,
+                        destination: gLatLonUsuario,
+                        travelMode: google.maps.TravelMode.WALKING
+                    }
+
+
+
+                    var ds = new google.maps.DirectionsService();
+                    //Obtener coordenadas
+
+                    var dr = new google.maps.DirectionsRenderer(
+                        objConfigDR
+                    ); //Traduce las coordenadas a ruta visible
+
+                    ds.route(objConfigDS, fnRutear);
+
+                    function fnRutear(resultados, status) {
+                        //Mostrar la linea entra A y B
+                        if (status == 'OK') {
+                            dr.setDirections(resultados);
+                        } else {
+                            alert('Error' + status);
+                        }
+                    }
+
+
+
+
+                    //Con los métodos de google Maps (importante poner libraries=geometry en el script de la API Key)
+                    document.getElementById("distancia").innerText = (google.maps.geometry.spherical.computeDistanceBetween(
+                        gLatLonFijo,
+                        gMarkerUsuario.getPosition()) / 1000).toFixed(2) + " km.";
+
+
+
+
+                    //Utilizando el método Haversine
+                    document.getElementById("distanciaH").innerText = ((getDistance(gLatLonUsuario, gLatLonFijo) / 1000)
+                        .toFixed(2) + " km.");
+
+
+
+
+                } //fin fn_ok
+
+                //Para obtener la distancia con el método Haversine.
+                function rad(x) {
+                    return x * Math.PI / 180;
+                };
+
+                function getDistance(p1, p2) {
+
+                    var R = 6378137; //radio de la tierra en metros
+                    var dLat = rad(p2.lat() - p1.lat());
+                    var dLong = rad(p2.lng() - p1.lng());
+                    var a = Math.sin(dLat / 2) * Math.sin(dLat / 2) + Math.cos(rad(p1.lat())) * Math.cos(rad(p2.lat())) *
+                        Math.sin(dLong / 2) * Math.sin(dLong / 2);
+                    var c = 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+                    var d = R * c;
+                    return d;
+                };
+            </script>
+
+
+
+        </div>
+
+         </main>
+
+         <footer>
+           <div class="footer">
+               <div class="row">
+                   <div class="col-md-4 col-sm-12">
+                       <div class="logo">
+                         <h2 id="titulo">  <img src="Images/libro.PNG" style="float: left"
+                           alt="PoetryTime" id="img"
+                           height="30px"
+                           width="30px"  padding="5px"/> Poetry Time <br/><small> Literatura</small></h2>
+
+                       </div>
+                   </div>
+                   <div class="col-md-4 col-sm-12">
+                       <div class="Create">
+                           <h4>Creado por</h4>
+                           <ul>
+                            <li>María Gabriela <br>Bolaños Vargas</li>
+                            <li>En el año: <br>2019</li>
+                           </ul>
+                       </div>
+                   </div>
+                   <div class="col-md-2 col-sm-12">
+                       <div class="info">
+                           <h4>Más imformación</h4>
+                           <ul>
+                            <li><em>Telefono</em>: 8574-9854</li>
+                            <li></li>
+                            <li><em>Email</em>: pt@literatura.com</li>
+                           </ul>
+                       </div>
+                   </div>
+
+               </div>
+           </div>
+       </footer>
+
+       </body>
+   </html>

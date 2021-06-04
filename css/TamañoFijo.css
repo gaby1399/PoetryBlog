@@ -1,0 +1,151 @@
+
+#Sara{
+    height: 650px;
+}
+
+#contenidoBiog{
+    height: 680px;
+}
+
+#poema{
+    height: 200px;
+}
+
+#contenidoBiog,#poema{
+    display: block;
+}
+
+@media(min-width:1500px){
+
+    #poema{
+        margin-top: 15%;
+    }
+}
+
+@media(max-width:1200px){
+    #Sara p{
+        font-size: 14px;
+      }
+      #Sara a{
+        font-size: 14px;
+      }
+}
+
+@media(max-width:900px){
+    #Sara p{
+        font-size: 12px;
+      }
+      #Sara a{
+        font-size: 12px;
+      }
+}
+
+
+@media(max-width:846px){
+    #contenidoBiog{
+        margin-top: 20%;
+    }
+    .menuInterno{
+        float: left;
+    }
+    #art1 p{
+        font-size: 15;
+    }
+  
+    #poema{
+        margin-top: 30%;
+        height: 23%;
+    }
+    #poema pre{
+        font-size: 12;
+       overflow: hidden;
+       text-align: center;
+      
+    }
+
+    #poema h3{
+         font-size: 14;
+       padding-left: -15%;
+    }
+    
+    #texto{
+        font-size: 14;
+    }
+   
+    #imgsara{
+        margin-left: -1%;
+    }
+    
+   #site_content{
+       margin-bottom: 30%;
+   }
+}
+
+@media(max-width:800px){
+    #Sara p{
+        font-size: 11px;
+      }
+      #Sara a{
+        font-size: 11px;
+      }
+}
+
+@media(max-width:620px){
+
+    #poema{
+ 
+        margin-top: 50%;
+        height: 22%;
+    }
+    #poema pre{
+        font-size: 10;
+       overflow: hidden;
+       text-align: center;
+      
+    }
+
+    #poema h3{
+         font-size: 12;
+       padding-left: -15%;
+    }
+    
+    #texto{
+        font-size: 14;
+    }
+   
+    #imgsara{
+        margin-left: -1%;
+    }
+    
+   #site_content{
+       margin-bottom: 30%;
+   }
+
+   #Sara p{
+    font-size: 10px;
+  }
+  #Sara a{
+    font-size: 10px;
+  }
+}
+
+
+@media(max-width:568px){
+
+    #titulo{
+        float: left;
+        margin-top: -10%;
+    }
+  
+    #Sara p{
+      font-size: 9px;
+    }
+    #Sara a{
+        font-size: 9px;
+      }
+
+    #poema{
+        height: 120px;
+      }
+
+  }

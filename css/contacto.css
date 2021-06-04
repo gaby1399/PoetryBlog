@@ -1,0 +1,58 @@
+.menu2 li a{
+   font-size: 20px;
+   font-weight: 100;
+}
+
+.info h2{
+    color:rgb(219, 165, 71);
+    text-transform: uppercase;
+    margin-bottom: 5%;
+ }
+
+.info h3{
+   color:rgb(221, 184, 121);
+}
+.info p{
+   margin-left: 15%;
+ }
+
+.info #campo {
+    margin-left: 5%;
+}
+
+#infoUsuario h2{
+   color: cadetblue;
+   text-transform: uppercase;
+   font-size: 40px;
+}
+#infoUsuario small{
+   text-transform: none;
+}
+.menu2{
+   z-index: 1;
+}
+#infoUsuario{
+   z-index: 2;
+   margin-right: 10%;
+}
+
+#enviar,#boton{
+   color: white;
+   background:  cadetblue;
+   font-weight: 20px;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   border: 1px solid cadetblue;
+   padding: 2% 4%;
+   font-size: 17px;
+}
+
+main{
+   margin: 2% ;
+}
+
+@media(max-width:600px){
+
+  #titulo{
+     margin-top: -10% ;
+  }
+}

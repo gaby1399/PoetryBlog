@@ -1,0 +1,23 @@
+{
+    "Libro":[
+        {"Year":"2014","Name":"Leche y miel","Lugar":"Librerias de Costa Rica o Amazon"},
+        {"Year":"2014","Name":"Otra manera de utilizar la boca","Lugar":"Amazon"},
+        {"Year":"2014","Name":"Baluarte","Lugar":"Amazon"},
+        {"Year":"2016","Name":"La ataraxia del corazón","Lugar":"Amazon"},
+        {"Year":"2016","Name":"Con tal de verte volar","Lugar":"Librerias de Costa Rica o Amazon"},
+        {"Year":"2016","Name":"La soledad de un cuerpo acostumbrado a la herida","Lugar":"Amazon"},
+        {"Year":"2017","Name":"Ahora que ya bailas","Lugar":"Librerias de Costa Rica o Amazon"},
+        {"Year":"2017","Name":"El sol y sus flores","Lugar":"Librerias de Costa Rica o Amazon"},
+        {"Year":"2017","Name":"y yo a tí","Lugar":"Amazon"},
+        {"Year":"2018","Name":"Aquella orilla nuestra","Lugar":"Librerias de Costa Rica o Amazon"}
+    ],
+
+    "CR-Lugar":[
+        {"Name":"Con tal de verte volar"},
+        {"Name":"Ahora que ya bailas"},
+        {"Name":"Cuando sea mayor"},
+        {"Name":"Aquella orilla nuestra"},
+        {"Name":"El sol y sus flores"},
+        {"Name":"Leche y miel"}
+    ]
+}

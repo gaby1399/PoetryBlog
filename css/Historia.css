@@ -1,0 +1,27 @@
+#ubc h2{
+    font-family: 'Abril Fatface', cursive;
+    margin: 0px 15px 30px 15px;
+     color: #901C25;
+     text-align: center;
+}
+
+.dato h2{
+    font-family: 'Abril Fatface', cursive;
+    margin: 15px 15px 20px 15px;
+     color:  rgb(221, 184, 121);
+     
+}
+
+#introduccion{
+    border-style: solid;
+    border-width: medium;
+    border-color: #D8CEC5;
+    margin: 5% 15%  10% 15%;
+    padding: 5% 10% 5% 10%;
+}
+
+#introduccion h1{
+    margin-top: 0px ;
+    margin-bottom:5%;
+    
+}

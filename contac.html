@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="author" content="Gabriela Bolaños " />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>Poetry Time</title>
+        <link rel="stylesheet" href="css/menuPoetry.css">
+        <link rel="stylesheet" href="css/Footer.css">
+        <link rel="stylesheet" href="css/contacto.css">
+        <link
+        rel="stylesheet"
+        href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous"
+      />
+      <script src="javaScript/ContactoInf.js"></script>
+
+    </head>
+        <body>
+            <div id="contenido">
+         <header id="header">
+          <input type="checkbox" id="btn-menu">
+          <label for="btn-menu"><img src="Images/icono.png" alt="" ></label>
+           <h2 id="titulo">  <img src="Images/libro.png" style="float: left"
+             alt="PoetryTime" id="img"
+             height="30px"
+             width="30px"  padding="5px"/> Poetry Time</h2>
+
+             <nav class="menu2">
+               <ul>
+                    <li><a  href="ProyectoPgW.html"  >Inicio</a>
+                        <li><a href="pagHistorica.html">Historia</a>
+                        <li><a id="pag" href="contac.html">Contactar</a>
+                       <li><a  href="Bibliografias.html">Biografía</a>
+                       <li><a href="pagPoemas.html">Galeria</a>
+
+               </ul>
+            </nav>
+         </div>
+         </header>
+         <main>
+              <div class="contenido">
+                     <div class="row">
+                       <div class="col-md-6 col-sm-12">
+                          <div class="info">
+                                  <h2>Información General</h2>
+
+                                       <div id="campo">
+                                           <img src="Images/fotoUsuario.png" />
+                                            <h3>Creadora </h3>
+                                            <p>Gabriela Bolaños Vargas</p>
+                                          </div>
+
+
+
+                                       <div id="campo">
+                                            <h3>Cedula</h3>
+                                            <p>4-0244-0285</p>
+                                          </div>
+
+
+
+                                       <div id="campo">
+                                              <h3>Correo Electronico</h3>
+                                              <p>mariagbolanosv@gmail.com</p>
+                                          </div>
+
+                             </div>
+
+                </div>
+                    <div class="col-md-4" id="infoUsuario">
+                      <form id="formulario" name="formulario" action="enviarCorreo.php" method="POST">
+                            <h2>Más Información <small>Registrese</small></h2>
+                            <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+                            <br/>
+                            <input type="text" class="form-control" name="nombre" id="nombre" placeholder="Nombre completo" required>
+                            <br/>
+                            <label for="date">Fecha de Nacimiento</label>
+                            <input type="date"  class="form-control" name="fecha" id="fecha" required/>
+                            <br/>
+                            <div id="mostrar" style="display: none;">
+                                    <label >Edad: </label>
+                                    <label  id="edad"></label>
+                                    </div>
+                            <label> Genero:</label><br/>
+                                <input type="radio" name="gender" value="Femenino"> Femenino<br>
+                                <input type="radio" name="gender" value="Masculino"> Masculino<br>
+                                <label style="display: none;"><input type="text" name="gen" value=""></label>
+
+                            <br/>
+                            <div  class="mult">
+                              <label>Grado Academico:</label>
+                                  <ul>
+                                    <label style="display: none;"><input type="text" name="gradoAcad" value=""></label>
+                                  <div class="checkbox">
+                                        <il><label><input  type="checkbox" name="acad"  value="Primaria">Primaria </label></div>
+                                  <div class="checkbox">
+                                        <il><label><input type="checkbox" name="acad"  value="Secundaria">Secundaria </label></div>
+                                  <div class="checkbox">
+                                        <il> <label><input type="checkbox" name="acad"  value="Bachiller">Bachiller </label></div>
+                                  <div class="checkbox">
+                                        <il> <label><input type="checkbox" name="acad"  value="Licenciatura">Licenciatura </label></div>
+                                  <div class="checkbox">
+                                        <il>  <label><input type="checkbox" name="acad"  value="Maestria">Maestria </label></div>
+                                </ul>
+
+                            </div>
+
+                             <button type="button" style="float: right;" name="boton" id="boton" onclick="edadActual(document.formulario.fecha.value)">Calcular Edad</button>
+                             <button type="submit" style="float: right;" name="enviar" id="enviar">Enviar</button>
+
+                        </form>
+                      </div>
+                    </div>
+                </div>
+                    </main>
+
+            <footer>
+                <div class="footer">
+                    <div class="row">
+                        <div class="col-md-4 col-sm-12">
+                            <div class="logo">
+                              <h2 id="titulo">  <img src="Images/libro.png" style="float: left"
+                                alt="PoetryTime" id="img"
+                                height="30px"
+                                width="30px"  padding="5px"/> Poetry Time <br/><small> Literatura</small></h2>
+
+                            </div>
+                        </div>
+                        <div class="col-md-4 col-sm-12">
+                            <div class="Create">
+                                <h4>Creado por</h4>
+                                <ul>
+                                    <li>María Gabriela <br>Bolaños Vargas</li>
+                                    <li>En el año: <br>2019</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-md-2 col-sm-12">
+                            <div class="info">
+                                <h4>Más Información</h4>
+                                <ul>
+                                    <li><em>Telefono</em>: 8574-9854</li>
+                                    <li><em>Email</em>: pt@literatura.com</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </footer>
+
+            </body>
+        </html>

@@ -1,0 +1,42 @@
+
+.tituloDest{
+    margin: auto 20px 40px 20px;
+    color:#901C25;
+}
+
+ h3{
+ color: white;
+}
+
+#linea{
+  border: 1px solid white;
+}
+.card-body {
+    background: rgb(221, 184, 121);
+    height: 230px;
+  }
+
+ @media(max-width:768px){
+
+    #titulo{
+        float: left;
+        margin-top: -7%;
+    }
+
+}
+@media(max-width:670px){
+
+  #titulo{
+      float: left;
+      margin-top: -8%;
+  }
+
+}
+@media(max-width:568px){
+
+  #titulo{
+      float: left;
+      margin-top: -10%;
+  }
+
+}

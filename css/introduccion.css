@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Courgette|Lobster|Sunflower:300&display=swap');
+#introduccion{
+    padding: 0 20% 5% ;
+   
+}
+#introduccion h1{
+    font-family: 'Abril Fatface', cursive;
+    margin: 15px 15px 20px 15px;
+     color: rgb(221, 184, 121);
+     text-align: center;
+}
+
+#introduccion p{
+    font-family: 'Sunflower', sans-serif;
+    font-size: 17;
+    }
+

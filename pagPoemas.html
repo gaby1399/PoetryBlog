@@ -1,0 +1,621 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Gabriela Bolaños">
+    <title>Galeria </title>
+    <link rel="stylesheet" href="css/menuPoetry.css">
+    <link rel="stylesheet" href="css/Footer.css">
+    <link rel="stylesheet" href="css/galeria.css">
+    <link
+    rel="stylesheet"
+    href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+    crossorigin="anonymous"
+  />
+
+<script src="javaScript/LikesGaleria.js"></script>
+<script
+src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+crossorigin="anonymous"
+></script>
+<script
+src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+crossorigin="anonymous"
+></script>
+
+  </head>
+  <body>
+    <div id="contenido">
+        <header id="header">
+         <input type="checkbox" id="btn-menu">
+         <label for="btn-menu"><img src="Images/icono.png" alt="" ></label>
+          <h2 id="titulo">  <img src="Images/libro.png" style="float: left"
+            alt="PoetryTime" id="img"
+            height="30px"
+            width="30px"  padding="5px"/> Poetry Time</h2>
+
+            <nav class="menu2">
+              <ul>
+                  <li><a  href="ProyectoPgW.html">Inicio</a>
+                    <li><a href="pagHistorica.html">Historia</a>
+                    <li><a  href="contac.html">Contactar</a>
+                   <li><a href="Bibliografias.html">Biografía</a>
+                   <li><a  id="pag"  href="pagPoemas.html">Galeria</a>
+
+              </ul>
+           </nav>
+        </div>
+        </header>
+
+
+<main role="main">
+
+    <div id="princ">
+        <h1>Galeria Poetica</h1>
+       </div>
+
+  <div class="album ">
+    <div class="container">
+
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"  src="Images/IMG_20191109_195111.jpg" width="100%" height="325" />
+            <div id="fila1" class="card-body">
+              <p class="card-text">cuando mi hija viva en mi vientre
+                <br/>le hablaré como
+                <br/>si ya hubiera cambiado el mundo
+                <br/>saldra de mí en la alfombra roja
+                <br/>completamente equipada con el conocimiento
+                <br/>de que es capaz de
+                <br/>cualquier cosa que se le pase por la cabeza
+              </p>
+              <div class="butn" id="n1F1">
+                <div class="btn-group">
+                        <button
+                        type="button" id="ver" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#myModal">View</button>
+                        <div class="modal fade" id="myModal" role="dialog">
+                              <div class="modal-dialog">
+
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h4 class="modal-title">Rupi Kaur</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  </div>
+                                  <div class="modal-body">
+                                  <img src="Images/IMG_20191109_195111.jpg" width="100%" height="100%" />
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                        <button type="button" id="like"  onclick="guardarLocal()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+                </div>
+                <div class="memoria" name="memoria" id="mem">
+                  <small id="text" style="float: right;"></small>
+              </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"   src="Images/IMG_20191109_195127.jpg" width="100%" height="325" />
+            <div id="fila1" class="card-body">
+              <p class="card-text">hay montañas que crecen
+                <br/>bajo nuestros pies
+                <br/>que no pueden contenerse
+                <br/>todo lo que hemos soportado
+                <br/>nos ha preparado para esto
+                <br/>trae los martillos y los puños
+                <br/>tenemos un techo de cristal que destruir
+                <br/>-vamos a quitarle el techo a este sitio
+              </p>
+              <div class="butn">
+                <div class="btn-group">
+                        <button type="button"
+                        type="button" class="btn btn-info " style=" box-shadow: none;"  data-toggle="modal" data-target="#techo">View</button>
+                        <div class="modal fade" id="techo" role="dialog">
+                              <div class="modal-dialog">
+
+
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h4 class="modal-title">Rupi Kaur</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+                                  </div>
+                                  <div class="modal-body">
+                                  <img src="Images/IMG_20191109_195127.jpg" width="100%" height="100%" />
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+                <button type="button" id="like2" onclick="guardarLocal2()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+
+                </div>
+                <div class="memoria" name="memoria" id="mem">
+                <small id="text2" style="float: right;"></small>
+              </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"   src="Images/IMG_20191109_195219.jpg" width="100%" height="325" />
+                  <div id="fila1" class="card-body">
+                    <p class="card-text">es un don
+                        <br/>ser del color de la tierra
+                        <br/>sabes cuantas veces
+                        <br/>me confunden las flores con su hogar
+                    </p>
+                    <div class="butn" id="n3F1">
+                      <div class="btn-group">
+                            <button type="button"
+                            type="button" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#tierra">View</button>
+                            <div class="modal fade" id="tierra" role="dialog">
+                                  <div class="modal-dialog">
+
+
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h4 class="modal-title">Rupi Kaur</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                      </div>
+                                      <div class="modal-body">
+                                      <img src="Images/IMG_20191109_195219.jpg" width="100%" height="100%" />
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                            <button type="button" id="like3" onclick="guardarLocal3()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+
+                          </div>
+                          <div class="memoria" name="memoria" id="mem">
+                          <small id="text3"  style="float: right;"></small>
+                          </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"   src="Images/IMG_20191109_213446.jpg" width="100%" height="325" />
+                  <div id="fila2" class="card-body">
+                    <p class="card-text">Así actuan aquellos
+                      <br/>que tienen miedo
+                      <br/>de tú libertad.
+
+                    </p>
+                    <div class="butn" id="n1F2">
+                      <div class="btn-group">
+                            <button type="button"
+                            type="button" class="btn btn-info"  style=" box-shadow: none;" data-toggle="modal" data-target="#miedo">View</button>
+                            <div class="modal fade" id="miedo" role="dialog">
+                                  <div class="modal-dialog">
+
+                                    <!-- Modal content-->
+                                    <div class="modal-content">
+                                      <div class="modal-header">
+                                          <h4 class="modal-title">Miguel Gane</h4>
+                                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                      </div>
+                                      <div class="modal-body">
+                                      <img src="Images/IMG_20191109_213446.jpg" width="100%" height="100%" />
+                                      </div>
+
+                                    </div>
+
+                                  </div>
+                                </div>
+
+                            <button type="button" id="like4" onclick="guardarLocal4()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+
+                      </div>
+                      <div class="memoria" name="memoria" id="mem">
+                      <small id="text4"  style="float: right;"></small>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img class="galeria"   src="Images/IMG_20191109_213334.jpg" width="100%" height="325" />
+                      <div id="fila2" class="card-body">
+                        <p class="card-text">Cuando no tienes nada que perder,
+                          <br/>saltas,
+                          <br/>y cuando ya lo has perdido,
+                          <br/>vuelas.
+                          <br/>Así de simple.
+
+                        </p>
+                        <div class="butn">
+                          <div class="btn-group">
+                                <button type="button"
+                                type="button" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#vuelas">View</button>
+                                <div class="modal fade" id="vuelas" role="dialog">
+                                      <div class="modal-dialog">
+
+
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h4 class="modal-title">Miguel Gane</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                          </div>
+                                          <div class="modal-body">
+                                          <img src="Images/IMG_20191109_213334.jpg" width="100%" height="100%" />
+                                          </div>
+
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                <button type="button" id="like5" onclick="guardarLocal5()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+
+                          </div>
+                          <div class="memoria" name="memoria" id="mem">
+                          <small id="text5"  style="float: right;"></small>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+              <div class="col-md-4">
+                <div class="card mb-4">
+                  <img class="galeria"   src="Images/IMG_20191109_213420.jpg" width="100%" height="325" />
+                      <div id="fila2" class="card-body">
+                        <p class="card-text">Que si me necesitas
+                          <br/>aquí estaré para luchar,
+                          <br/>pero no por tí,
+                          <br/>sino contigo.
+                          <br/>Valiente
+
+                        </p>
+                        <div class="butn" id="n3F2">
+                          <div class="btn-group">
+                                <button type="button"
+                                type="button" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#valiente">View</button>
+                                <div class="modal fade" id="valiente" role="dialog">
+                                      <div class="modal-dialog">
+
+
+                                        <div class="modal-content">
+                                          <div class="modal-header">
+                                              <h4 class="modal-title">Miguel Gane</h4>
+                                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                          </div>
+                                          <div class="modal-body">
+                                          <img src="Images/IMG_20191109_213420.jpg" width="100%" height="100%" />
+                                          </div>
+
+                                        </div>
+
+                                      </div>
+                                    </div>
+
+                                <button type="button" id="like6" onclick="guardarLocal6()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+
+                              </div>
+                              <div class="memoria" name="memoria" id="mem">
+                              <small id="text6"  style="float: right;"></small>
+                              </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+
+
+
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"   src="Images/IMG_20191109_195308.jpg" width="100%" height="325" />
+            <div id="fila3" class="card-body">
+              <p class="card-text">-La soledad de un cuerpo acostumbrado a la herida.</p>
+              <div class="butn">
+                <div class="btn-group">
+                        <button type="button"
+                        type="button" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#herida">View</button>
+                        <div class="modal fade" id="herida" role="dialog">
+                              <div class="modal-dialog">
+
+
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h4 class="modal-title">Elvira Sastre</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                  </div>
+                                  <div class="modal-body">
+                                  <img src="Images/IMG_20191109_195308.jpg" width="100%" height="100%" />
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                        <button type="button" id="like7" onclick="guardarLocal7()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+
+                      </div>
+                      <div class="memoria" name="memoria" id="mem">
+                      <small id="text7"  style="float: right;"></small>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"  src="Images/IMG_20191109_195252.jpg" width="100%" height="325" />
+            <div id="fila3" class="card-body">
+              <p class="card-text">-Baluarte.</p>
+              <div class="butn" id="n2F3">
+                <div class="btn-group">
+                        <button type="button"
+                        type="button" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#baluarte">View</button>
+                        <div class="modal fade" id="baluarte" role="dialog">
+                              <div class="modal-dialog">
+
+
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h4 class="modal-title">Elvira Sastre</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                  </div>
+                                  <div class="modal-body">
+                                  <img src="Images/IMG_20191109_195252.jpg" width="100%" height="100%" />
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                        <button type="button" id="like8" onclick="guardarLocal8()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+                      </div>
+                      <div class="memoria" name="memoria" id="mem">
+                      <small id="text8"  style="float: right;"></small>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"  src="Images/IMG_20191109_195236.jpg" width="100%" height="325" />
+            <div id="fila3" class="card-body">
+              <p class="card-text">-Aquella orilla nuestra.</p>
+              <div class="butn"  id="n3F3">
+                <div class="btn-group">
+                        <button type="button"
+                        type="button" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#orilla">View</button>
+                        <div class="modal fade" id="orilla" role="dialog">
+                              <div class="modal-dialog">
+
+
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h4 class="modal-title">Elvira Sastre</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                  </div>
+                                  <div class="modal-body">
+                                  <img src="Images/IMG_20191109_195236.jpg" width="100%" height="100%" />
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                        <button type="button" id="like9" onclick="guardarLocal9()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+
+                </div>
+                <div class="memoria" name="memoria" id="mem">
+                <small id="text9"  style="float: right;"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"   src="Images/IMG_20191109_195457.jpg" width="100%" height="325" />
+            <div id="fila4" class="card-body">
+              <p class="card-text">Mi silencio es una explosión,
+                    <br/> no te metas dentro.</p>
+              <div class="butn"  id="n1F4">
+                <div class="btn-group">
+                        <button type="button"
+                        type="button" class="btn btn-info"  style=" box-shadow: none;" data-toggle="modal" data-target="#silencio">View</button>
+                        <div class="modal fade" id="silencio" role="dialog">
+                              <div class="modal-dialog">
+
+
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h4 class="modal-title">Sara Buho</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                  </div>
+                                  <div class="modal-body">
+                                  <img src="Images/IMG_20191109_195457.jpg" width="100%" height="100%" />
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                        <button type="button" id="like10" onclick="guardarLocal10()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+                      </div>
+                      <div class="memoria" name="memoria" id="mem">
+                      <small id="text10"  style="float: right;"></small>
+                      </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"   src="Images/IMG_20191109_195423.jpg" width="100%" height="325" />
+            <div id="fila4" class="card-body">
+              <p class="card-text">Cuando dejes de echarle la culpa
+                    <br/>a la piedra
+                    <br/>aprenderas a caminar.
+              </p>
+              <div class="butn"  id="n2F4">
+                <div class="btn-group">
+                        <button type="button"
+                        type="button" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#culpa">View</button>
+                        <div class="modal fade" id="culpa" role="dialog">
+                              <div class="modal-dialog">
+
+
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                      <h4 class="modal-title">Sara Buho</h4>
+                                    <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                                  </div>
+                                  <div class="modal-body">
+                                  <img src="Images/IMG_20191109_195423.jpg" width="100%" height="100%" />
+                                  </div>
+
+                                </div>
+
+                              </div>
+                            </div>
+
+                        <button type="button" id="like11" onclick="guardarLocal11()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+
+                </div>
+                <div class="memoria" name="memoria" id="mem">
+                <small id="text11"  style="float: right;"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4">
+            <img class="galeria"   src="Images/IMG_20191109_195408.jpg" width="100%" height="325" />
+            <div id="fila4" class="card-body">
+              <p class="card-text">Llegas y te combiertes
+                    <br/> en la primera persona
+                    <br/>capaz de hablar de paz
+                    <br/>sin mencionar la guerra.
+              </p>
+              <div class="butn">
+                <div class="btn-group">
+                  <button type="button"
+                  type="button" class="btn btn-info "  style=" box-shadow: none;" data-toggle="modal" data-target="#paz">View</button>
+                  <div class="modal fade" id="paz" role="dialog">
+                        <div class="modal-dialog">
+
+
+                          <div class="modal-content">
+                            <div class="modal-header">
+                                <h4 class="modal-title">Sara Buho</h4>
+                              <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                            </div>
+                            <div class="modal-body">
+                            <img src="Images/IMG_20191109_195408.jpg" width="100%" height="100%" />
+                            </div>
+
+                          </div>
+
+                        </div>
+                      </div>
+
+                  <button type="button" id="like12" onclick="guardarLocal12()" class="btn btn-sm btn-outline-secondary"><img width="50%" height="60%" src="Images/libroLike.png"/></button>
+                </div>
+                <div class="memoria" name="memoria" id="mem">
+                <small id="text12"  style="float: right;"></small>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer>
+    <div class="footer">
+        <div class="row">
+            <div class="col-md-4 col-sm-12">
+                <div class="logo">
+                  <h2 id="titulo">  <img src="Images/libro.png" style="float: left"
+                    alt="PoetryTime" id="img"
+                    height="30px"
+                    width="30px"  padding="5px"/> Poetry Time <br/><small> Literatura</small></h2>
+
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12">
+                <div class="Create">
+                    <h4>Creado por</h4>
+                    <ul>
+                        <li>Maria Gabriela <br>Bolaños Vargas</li>
+                        <li>En el año: <br>2019</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <div class="info">
+                    <h4>Más información</h4>
+                    <ul>
+                        <li><em>Telefono</em>: 8574-9854</li>
+                        <li><em>Email</em>: pt@literatura.com</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</footer>
+</body>
+
+</html>
